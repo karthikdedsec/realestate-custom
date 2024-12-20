@@ -1,5 +1,134 @@
+/* featured collection */
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Pacifico&family=Passion+One:wght@400;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Pacifico&family=Passion+One:wght@400;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+.feature-container {
+  padding-bottom: 8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .feature-container h2 {
+    font-size: 3rem;
+    text-align: center; }
+
+.property-cards-container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  column-gap: 2.8rem;
+  gap: 2.8rem;
+  margin-top: 6rem; }
+
+@media (min-width: 640px) {
+  .property-cards-container {
+    grid-template-columns: repeat(2, 1fr); } }
+
+@media (min-width: 768px) {
+  .property-cards-container {
+    grid-template-columns: repeat(3, 1fr); } }
+
+.property-card {
+  max-width: 49.5rem; }
+  .property-card img {
+    width: 100%;
+    max-height: 25.6rem;
+    object-fit: cover; }
+  .property-card .card-title {
+    font-size: 2.5rem;
+    font-weight: 400; }
+  .property-card .card-price {
+    color: #002e53;
+    font-weight: 900;
+    font-size: 1.6rem; }
+  .property-card .card-location {
+    color: #8d8d8d;
+    font-size: 1.6rem; }
+
+.card-content > * {
+  padding: 1rem; }
+
+/* about section */
+.about-section {
+  margin-top: 5rem; }
+
+.about-section-container {
+  display: flex;
+  align-items: center;
+  gap: 1.6rema;
+  margin-top: 8rem; }
+  @media (max-width: 640px) {
+    .about-section-container {
+      flex-direction: column-reverse; } }
+  .about-section-container .left__about-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem; }
+    .about-section-container .left__about-section .left__about-section--subhead {
+      font-size: 2rem;
+      font-weight: 900;
+      color: #838383; }
+    .about-section-container .left__about-section .left__about-section--mainhead {
+      font-size: 5rem; }
+    .about-section-container .left__about-section .left__about-section--description {
+      font-size: 2.3rem;
+      font-weight: 500;
+      color: #353a3f; }
+    .about-section-container .left__about-section .buttons {
+      display: flex;
+      gap: 3rem; }
+      .about-section-container .left__about-section .buttons a {
+        font-size: 1.3rem; }
+  .about-section-container .right__about-section {
+    border-radius: 30px;
+    overflow: hidden;
+    flex: 1; }
+    .about-section-container .right__about-section .image__about-section {
+      width: 100%;
+      height: 100%; }
+
+/* our vision */
+.our-vision-container {
+  margin-top: 6rem;
+  background-image: linear-gradient(to left bottom, #a6daf0c5, #afe3f9da), url(../../images/real-estate.jpg);
+  background-size: cover;
+  background-position: center;
+  transform: skewY(-4deg); }
+  .our-vision-container h2 {
+    font-size: 3rem;
+    text-align: center; }
+  .our-vision-container .vision-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    transform: skewY(4deg); }
+    .our-vision-container .vision-cards-container .vision-cards {
+      max-width: 20rem;
+      background-color: white;
+      margin: 4rem;
+      padding: 1rem;
+      height: 25rem;
+      box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.25);
+      transition: transform 0.4s;
+      outline-offset: 1rem; }
+      .our-vision-container .vision-cards-container .vision-cards p {
+        font-size: 1.6rem;
+        text-align: center;
+        line-height: 2.5rem;
+        padding-top: 3rem;
+        color: #838383; }
+      .our-vision-container .vision-cards-container .vision-cards i {
+        font-size: 3rem;
+        color: #002e53; }
+      .our-vision-container .vision-cards-container .vision-cards .vision-cards--c {
+        text-align: center; }
+      .our-vision-container .vision-cards-container .vision-cards:hover {
+        transform: scale(1.05);
+        outline: 1rem solid #002e53; }
+  .our-vision-container h2 {
+    padding-top: 2rem;
+    transform: skewY(4deg); }
+
 *,
 *::before,
 *::after {
@@ -90,7 +219,7 @@ a {
   right: 5%;
   transform: translateY(-50%); }
   .title h1 {
-    font-size: 8rem;
+    font-size: 6rem;
     font-family: "Passion One", sans-serif;
     animation: fromLeft 2s ease-in-out; }
   .title p {
@@ -184,85 +313,3 @@ a {
     margin: 2rem;
     text-transform: uppercase;
     font-weight: 700; }
-
-/* featured collection */
-.feature-container {
-  padding-bottom: 8rem; }
-  .feature-container h2 {
-    font-size: 3rem;
-    text-align: center; }
-
-.property-cards-container {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  column-gap: 1.8rem;
-  gap: 1.8rem;
-  margin-top: 6rem; }
-
-@media (min-width: 640px) {
-  .property-cards-container {
-    grid-template-columns: repeat(2, 1fr); } }
-
-@media (min-width: 768px) {
-  .property-cards-container {
-    grid-template-columns: repeat(3, 1fr); } }
-
-.property-card {
-  max-width: 49.5rem; }
-  .property-card img {
-    width: 100%;
-    max-height: 25.6rem;
-    object-fit: cover; }
-  .property-card .card-title {
-    font-size: 2.5rem;
-    font-weight: 400; }
-  .property-card .card-price {
-    color: #002e53;
-    font-weight: 900;
-    font-size: 1.6rem; }
-  .property-card .card-location {
-    color: #8d8d8d;
-    font-size: 1.6rem; }
-
-.card-content > * {
-  padding: 1rem; }
-
-/* about section */
-.about-section {
-  margin-top: 5rem; }
-
-.about-section-container {
-  display: flex;
-  align-items: center;
-  gap: 1.6rem;
-  margin-top: 8rem; }
-  @media (max-width: 640px) {
-    .about-section-container {
-      flex-direction: column-reverse; } }
-  .about-section-container .left__about-section {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    gap: 3rem; }
-    .about-section-container .left__about-section .left__about-section--subhead {
-      font-size: 2rem;
-      font-weight: 900;
-      color: #838383; }
-    .about-section-container .left__about-section .left__about-section--mainhead {
-      font-size: 5rem; }
-    .about-section-container .left__about-section .left__about-section--description {
-      font-size: 2.3rem;
-      font-weight: 500;
-      color: #353a3f; }
-    .about-section-container .left__about-section .buttons {
-      display: flex;
-      gap: 3rem; }
-      .about-section-container .left__about-section .buttons a {
-        font-size: 1.3rem; }
-  .about-section-container .right__about-section {
-    border-radius: 30px;
-    overflow: hidden;
-    flex: 1; }
-    .about-section-container .right__about-section .image__about-section {
-      width: 100%;
-      height: 100%; }

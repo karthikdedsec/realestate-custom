@@ -1,0 +1,164 @@
+@import "../abstracts/mixins";
+
+/* featured collection */
+
+.feature-container {
+  padding-bottom: 8rem;
+  @include titleHeading;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.property-cards-container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  column-gap: 2.8rem;
+  gap: 2.8rem;
+  margin-top: 6rem;
+}
+
+@media (min-width: 640px) {
+  .property-cards-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 768px) {
+  .property-cards-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.property-card {
+  max-width: 49.5rem;
+  img {
+    width: 100%;
+    max-height: 25.6rem;
+    object-fit: cover;
+  }
+  .card-title {
+    font-size: 2.5rem;
+    font-weight: 400;
+  }
+  .card-price {
+    color: #002e53;
+    font-weight: 900;
+    font-size: 1.6rem;
+  }
+  .card-location {
+    color: #8d8d8d;
+    font-size: 1.6rem;
+  }
+}
+
+.card-content > * {
+  padding: 1rem;
+}
+
+/* about section */
+
+.about-section {
+  margin-top: 5rem;
+}
+
+.about-section-container {
+  display: flex;
+  align-items: center;
+  gap: 1.6rema;
+  margin-top: 8rem;
+
+  @media (max-width: 640px) {
+    & {
+      flex-direction: column-reverse;
+    }
+  }
+  .left__about-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+
+    .left__about-section--subhead {
+      font-size: 2rem;
+      font-weight: 900;
+      color: #838383;
+    }
+    .left__about-section--mainhead {
+      font-size: 5rem;
+    }
+    .left__about-section--description {
+      font-size: 2.3rem;
+      font-weight: 500;
+      color: #353a3f;
+    }
+    .buttons {
+      display: flex;
+      gap: 3rem;
+      a {
+        font-size: 1.3rem;
+      }
+    }
+  }
+  .right__about-section {
+    border-radius: 30px;
+    overflow: hidden;
+    flex: 1;
+    .image__about-section {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+/* our vision */
+
+.our-vision-container {
+  margin-top: 6rem;
+  @include titleHeading;
+  background-image: linear-gradient(to left bottom, #a6daf0c5, #afe3f9da),
+    url(../../images/real-estate.jpg);
+  background-size: cover;
+  background-position: center;
+  transform: skewY(-4deg);
+  .vision-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    transform: skewY(4deg);
+
+    .vision-cards {
+      max-width: 20rem;
+      background-color: white;
+      margin: 4rem;
+      padding: 1rem;
+      height: 25rem;
+      box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.25);
+      transition: transform 0.4s;
+      outline-offset: 1rem;
+      p {
+        font-size: 1.6rem;
+        text-align: center;
+        line-height: 2.5rem;
+        padding-top: 3rem;
+        color: #838383;
+      }
+      i {
+        font-size: 3rem;
+        color: #002e53;
+      }
+      .vision-cards--c {
+        text-align: center;
+      }
+      &:hover {
+        transform: scale(1.05);
+        outline: 1rem solid #002e53;
+      }
+    }
+  }
+  h2 {
+    padding-top: 2rem;
+    transform: skewY(4deg);
+  }
+}
