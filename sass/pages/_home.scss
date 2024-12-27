@@ -30,6 +30,19 @@
   }
 }
 
+.navbar__burger {
+  display: none;
+}
+
+@media (max-width: 640px) {
+  .navbar__burger {
+    display: inline-block;
+  }
+  .register-btn {
+    display: none;
+  }
+}
+
 .property-card {
   max-width: 49.5rem;
   img {
@@ -162,3 +175,7 @@
     transform: skewY(4deg);
   }
 }
+
+
+/*navigation*/
+
