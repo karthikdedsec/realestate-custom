@@ -13,12 +13,12 @@
   <body>
     <header>
       <nav class="navbar container">
-        <h5>LOGO</h5>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Properties</a></li>
-          <li><a href="#">Agents</a></li>
-          <li><a href="#">Blog</a></li>
+        <h5><a href="/" class="navbar__logo">LOGO</a></h5>
+        <ul class="navbar__links">
+          <li class="navbar__links--link active"><a href="#">Home</a></li>
+          <li class="navbar__links--link"><a href="#">Properties</a></li>
+          <li class="navbar__links--link"><a href="#">Agents</a></li>
+          <li class="navbar__links--link"><a href="#">Blog</a></li>
         </ul>
 
         <a class="register-btn" href="">Register</a>
@@ -32,28 +32,39 @@
           <div class="navbar__background"></div>
         </div>
       </nav>
+
+      <div class="mobile-links">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Info</a></li>
+        </ul>
+      </div>
     </header>
 
     <section class="container">
       <div class="hero">
         <div class="title">
-          <h1>Let's Find Your dream home!</h1>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae
-            consequuntur nihil, a maxime inventore explicabo delectus assumenda
-            atque minima natus.
-          </p>
+          <div class="title__sub">
+            <h1>Let's Find Your dream home!</h1>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Molestiae consequuntur nihil, a maxime inventore explicabo
+              delectus assumenda atque minima natus.
+            </p>
 
-          <div class="location-container">
-            <div class="sub-links">
-              <a href="">Buy</a>
-              <a href="">Sell</a>
-              <a href="">Rent</a>
-            </div>
-            <div class="search-container">
-              <input type="text" placeholder="Search Your Location Here" />
+            <div class="location-container">
+              <div class="sub-links">
+                <a href="">Buy</a>
+                <a href="">Sell</a>
+                <a href="">Rent</a>
+              </div>
+              <div class="search-container">
+                <input type="text" placeholder="Search Your Location Here" />
 
-              <a href="" class="btn btn-white">Search</a>
+                <a href="" class="btn btn-white">Search</a>
+              </div>
             </div>
           </div>
         </div>
@@ -185,5 +196,7 @@
         </div>
       </div>
     </section>
+
+    <script src="./js/script.js"></script>
   </body>
 </html>

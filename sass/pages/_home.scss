@@ -5,10 +5,6 @@
 .feature-container {
   padding-bottom: 8rem;
   @include titleHeading;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 .property-cards-container {
@@ -17,6 +13,9 @@
   column-gap: 2.8rem;
   gap: 2.8rem;
   margin-top: 6rem;
+  @include respond(phone) {
+    width: 100%;
+  }
 }
 
 @media (min-width: 640px) {
@@ -44,7 +43,7 @@
 }
 
 .property-card {
-  max-width: 49.5rem;
+  max-width: 100%;
   img {
     width: 100%;
     max-height: 25.6rem;
@@ -176,6 +175,36 @@
   }
 }
 
-
 /*navigation*/
 
+//mobile
+
+.mobile-links {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 99999;
+  transform: translateX(-100%);
+  transition: transform 0.5s ease-in-out;
+  ul {
+    li {
+      font-size: 5rem;
+      margin: 5rem;
+      text-align: center;
+      transition: all 0.5s;
+
+      a {
+        text-decoration: none;
+        color: white;
+        font-weight: 500;
+      }
+
+      &:hover {
+        transform: translateX(5px);
+      }
+    }
+  }
+}

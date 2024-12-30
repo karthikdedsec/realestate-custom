@@ -4,3 +4,29 @@
     text-align: center;
   }
 }
+
+/* media queried */
+
+// 600 / 16    => 1em = 16px
+@mixin respond($breakpoint) {
+  @if $breakpoint == phone {
+    @media (max-width: 37.5em) {
+      @content;
+    }
+  }
+  @if $breakpoint == tablet {
+    @media (max-width: 56.25em) {
+      @content;
+    }
+  }
+  @if $breakpoint == large {
+    @media (max-width: 75em) {
+      @content;
+    }
+  }
+  @if $breakpoint == x-large {
+    @media (min-width: 112.5em) {
+      @content;
+    }
+  }
+}
