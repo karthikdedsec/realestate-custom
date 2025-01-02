@@ -260,6 +260,12 @@
       height: 2px; /* Set the height */
     }
   }
+  &.properties &__container {
+    padding-top: 1.3rem;
+  }
+  &.properties {
+    margin-top: 0;
+  }
   &__toplinks {
     width: 100%;
     display: flex;

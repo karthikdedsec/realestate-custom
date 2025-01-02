@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/styles.css" />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
@@ -15,10 +16,8 @@
       <nav class="navbar container">
         <h5><a href="/" class="navbar__logo">LOGO</a></h5>
         <ul class="navbar__links">
-          <li class="navbar__links--link active"><a href="/">Home</a></li>
-          <li class="navbar__links--link">
-            <a href="/properties.html">Properties</a>
-          </li>
+          <li class="navbar__links--link"><a href="/">Home</a></li>
+          <li class="navbar__links--link active"><a href="#">Properties</a></li>
           <li class="navbar__links--link"><a href="#">Agents</a></li>
           <li class="navbar__links--link"><a href="#">Blog</a></li>
         </ul>
@@ -46,37 +45,8 @@
     </header>
 
     <section class="container">
-      <div class="hero">
-        <div class="title">
-          <div class="title__sub">
-            <h1>Let's Find Your dream home!</h1>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Molestiae consequuntur nihil, a maxime inventore explicabo
-              delectus assumenda atque minima natus.
-            </p>
-
-            <div class="location-container">
-              <div class="sub-links">
-                <a href="">Buy</a>
-                <a href="">Sell</a>
-                <a href="">Rent</a>
-              </div>
-              <div class="search-container">
-                <input type="text" placeholder="Search Your Location Here" />
-
-                <a href="" class="btn btn-white">Search</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="container feature-container">
-      <h2>Featured Properties</h2>
-
-      <div class="property-cards-container">
+      <h2 class="heading-primary mt-md mb-lg">Explore Properties</h2>
+      <div class="properties-listing">
         <div class="property-card">
           <div class="property-card-image">
             <img
@@ -89,6 +59,66 @@
             <p class="card-price">Starting from AED 1000</p>
             <a href="#" class="card-location"
               ><i class="fa-solid fa-location-dot"></i>Dubai bay Park</a
+            >
+          </div>
+        </div>
+        <div class="property-card">
+          <div class="property-card-image">
+            <img
+              src="https://images.unsplash.com/photo-1719299225324-301bad5c333c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt=""
+            />
+          </div>
+          <div class="card-content">
+            <p class="card-title">Venicitore Aqua Flora</p>
+            <p class="card-price">Starting from AED 1000</p>
+            <a href="#" class="card-location"
+              ><i class="fa-solid fa-location-dot"></i>Dubai Science Park</a
+            >
+          </div>
+        </div>
+        <div class="property-card">
+          <div class="property-card-image">
+            <img
+              src="https://images.unsplash.com/photo-1719299225324-301bad5c333c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt=""
+            />
+          </div>
+          <div class="card-content">
+            <p class="card-title">Venicitore Aqua Flora</p>
+            <p class="card-price">Starting from AED 1000</p>
+            <a href="#" class="card-location"
+              ><i class="fa-solid fa-location-dot"></i>Dubai Science Park</a
+            >
+          </div>
+        </div>
+        <div class="property-card">
+          <div class="property-card-image">
+            <img
+              src="https://images.unsplash.com/photo-1719299225324-301bad5c333c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt=""
+            />
+          </div>
+          <div class="card-content">
+            <p class="card-title">Venicitore Aqua Flora</p>
+            <p class="card-price">Starting from AED 1000</p>
+            <a href="#" class="card-location"
+              ><i class="fa-solid fa-location-dot"></i>Dubai Science Park</a
+            >
+          </div>
+        </div>
+        <div class="property-card">
+          <div class="property-card-image">
+            <img
+              src="https://images.unsplash.com/photo-1719299225324-301bad5c333c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt=""
+            />
+          </div>
+          <div class="card-content">
+            <p class="card-title">Venicitore Aqua Flora</p>
+            <p class="card-price">Starting from AED 1000</p>
+            <a href="#" class="card-location"
+              ><i class="fa-solid fa-location-dot"></i>Dubai Science Park</a
             >
           </div>
         </div>
@@ -140,74 +170,7 @@
       </div>
     </section>
 
-    <section class="container about-section">
-      <div class="about-section-container">
-        <div class="left__about-section">
-          <p class="left__about-section--subhead">Find your perfect mortgage</p>
-          <h2 class="left__about-section--mainhead">
-            Your home-buying journey should be smooth and stress-free
-          </h2>
-          <p class="left__about-section--description">
-            Speak to our in-house mortgage team today and get access the best
-            rates in the UAE.
-          </p>
-
-          <div class="buttons">
-            <a href="#" class="btn btn-white">mortage calculator</a>
-            <a href="#" class="btn btn-black">speak with team</a>
-          </div>
-        </div>
-        <div class="right__about-section">
-          <div class="image-container">
-            <img
-              src="./images/mortage.jpg"
-              alt="person smiling"
-              class="image__about-section"
-            />
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="container our-vision-container">
-      <h2>Our Visison</h2>
-      <div class="vision-cards-container">
-        <div class="vision-cards">
-          <div class="vision-cards--c">
-            <i class="fa-solid fa-lightbulb"></i>
-          </div>
-          <p>
-            Delivering top tier properties and umatched service for a superior
-            real estate experience
-          </p>
-        </div>
-        <div class="vision-cards">
-          <div class="vision-cards--c">
-            <i class="fa-solid fa-city"></i>
-          </div>
-          <p>
-            Ensuring meticulous attention to detail and superior construction
-            for lasting value
-          </p>
-        </div>
-        <div class="vision-cards">
-          <div class="vision-cards--c">
-            <i class="fa-solid fa-briefcase"></i>
-          </div>
-          <p>
-            Building eco friendly neighborhoods that enhance quality of life
-          </p>
-        </div>
-        <div class="vision-cards">
-          <div class="vision-cards--c">
-            <i class="fa-solid fa-earth-americas"></i>
-          </div>
-          <p>blending technology and framework to create exceptional homes</p>
-        </div>
-      </div>
-    </section>
-
-    <footer class="footer">
+    <footer class="footer properties">
       <div class="footer__container container">
         <div class="footer__toplinks">
           <h5><a href="/" class="footer__logo">LOGO</a></h5>

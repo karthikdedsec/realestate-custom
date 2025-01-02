@@ -197,6 +197,10 @@
       /* Remove default border */
       height: 2px;
       /* Set the height */ }
+  .footer.properties .footer__container {
+    padding-top: 1.3rem; }
+  .footer.properties {
+    margin-top: 0; }
   .footer__toplinks {
     width: 100%;
     display: flex;
@@ -268,6 +272,31 @@
     font-size: 3rem;
     font-weight: bold;
     color: white; }
+
+.properties-listing {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 2rem; }
+  .properties-listing .property-card {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr); }
+
+.heading-primary {
+  font-size: 3rem;
+  text-align: center; }
+
+.mt-md {
+  margin-top: 2rem; }
+
+.mt-lg {
+  margin-top: 4rem; }
+
+.mb-md {
+  margin-bottom: 2rem; }
+
+.mb-lg {
+  margin-bottom: 4rem; }
 
 /* media queried */
 *,
